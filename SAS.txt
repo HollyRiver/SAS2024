@@ -1,0 +1,21 @@
+/* 기본적인 프로그램의 구조 */
+DATA data_name;
+ INPUT variable1 variable2 $ @@;
+ CARDS;
+ data1 data2 data3 data4 data5 data6
+ data7 data8 data9 data10 data11 data12
+ ;
+RUN;
+PROC procedure_name OPTION;
+ VAR variable1;
+ BY variable2; /*BY는 proc sort로 정렬한 변수만 사용*/
+ OUTPUT OUT=data_name_1 keywords; /*저장장소*/
+RUN;
+
+DATA step - dataset 생성 및 수정
+PROC step - dataset에 특정 프로시저를 수행
+
+* 모든 명령문은 세미콜론으로 끝냄
+* 대소문자 구별 없음
+* 주석처리는 /* */ 또는 * ;
+* 한 줄에 세미콜론으로 구분하여 여러 문장 기술 가능
