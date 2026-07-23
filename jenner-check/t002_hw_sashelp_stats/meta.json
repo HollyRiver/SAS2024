@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_hw_sashelp_stats",
+  "source_file": "hw/0924.sas",
+  "source_blob_sha": "cd77c6221a2df85b00248af0f436aad7e599da2f",
+  "source_commit": "f91b27eb72369261d84eaf98aed553f58df28b1e",
+  "notes": "sashelp.class descriptive-statistics workflow from 0924.sas: PROC CONTENTS, FREQ (/nocum), MEANS (maxdec/fw, CLASS, NOPRINT+OUTPUT), UNIVARIATE normal/plot. Runs verbatim against the engine's built-in sashelp.class."
+}

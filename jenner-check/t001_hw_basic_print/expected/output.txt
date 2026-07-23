@@ -1,0 +1,43 @@
+                                                    Observations 2-5
+
+  Obs  subj                name  no_vis  expense
+    1  1167  Maryann White            2   999.34
+    2  1168  Thomas Jones            10  3904.89
+    3  1201  Benedictine Arnold       1   450.23
+    4  1302  Felicia Ho               7   209.94
+
+... 2 more observations (showing 4 of 6)
+
+                                                 no_vis greater than 5
+
+  Obs          name  no_vis  type_vis  expense
+    1  Alice Smith        7         1     1.98
+    2  Thomas Jones      10       190  3904.89
+    3  Felicia Ho         7        90   209.94
+    4  John Smith         6        87   763.09
+
+                                                   name contains Smi
+
+  Obs         name  gender  no_vis  type_vis  expense
+    1  Alice Smith       1       7         1     1.98
+    2  John Smith        2       6        87   763.09
+    3  Jane Smiley       1       5        90      567
+
+                                        Sorted basic (descending clinic, no_vis)
+
+clinic  no_vis  subj                name  gender  type_vis  expense
+MNMC         5  1980  Jane Smiley              1        90      567
+MNMC         6  1471  John Smith               2        87   763.09
+MNMC         7  1302  Felicia Ho               1        90   209.94
+LEWN         2  1167  Maryann White            1         1   999.34
+LEWN         7  1024  Alice Smith              1         1     1.98
+ALTO         1  1201  Benedictine Arnold       2        90   450.23
+ALTO        10  1168  Thomas Jones             2       190  3904.89
+
+                                            no_vis total for type_vis = 190
+
+        name  clinic  no_vis
+Thomas Jones  ALTO        10
+------------          ======  
+                          10  
+

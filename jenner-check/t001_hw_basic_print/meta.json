@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_hw_basic_print",
+  "source_file": "hw/0924.sas",
+  "source_blob_sha": "cd77c6221a2df85b00248af0f436aad7e599da2f",
+  "source_commit": "f91b27eb72369261d84eaf98aed553f58df28b1e",
+  "notes": "Fixed-column INPUT clinic-visits DATA step from 0924.sas plus its PROC PRINT/SORT selection logic (FIRSTOBS/OBS, WHERE, CONTAINS, descending sort, ID/SUM). ODS PDF Windows destination removed so the listing is captured directly."
+}

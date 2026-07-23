@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_hw_sgplot",
+  "source_file": "hw/0924.sas",
+  "source_blob_sha": "cd77c6221a2df85b00248af0f436aad7e599da2f",
+  "source_commit": "f91b27eb72369261d84eaf98aed553f58df28b1e",
+  "notes": "PROC SGPLOT graphics block from 0924.sas over sashelp.cars: vbox box-plots (category=/group=, WHERE on Type) and a grouped scatter with markerattrs=. Runs unmodified; each plot renders to ods_output/*.png and *.svg."
+}

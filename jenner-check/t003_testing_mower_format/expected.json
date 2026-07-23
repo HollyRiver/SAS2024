@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-23T13:24:32Z",
+  "_captured_run_id": "r_a1515e1236694a46918ce7473172422f",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote mower (24 rows, 3 columns).",
+    "NOTE: Wrote mow_y (12 rows, 3 columns).",
+    "NOTE: PROC FREQ"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}
