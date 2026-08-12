@@ -1,0 +1,232 @@
+                                                sashelp.class structure
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: sashelp.class
+Observations:  19
+Variables:     5
+Label:         Student measurement data
+
+Variables (in creation order):
+
+  #  Variable  Type    Len  Format  Label
+---  --------  ----  -----  ------  ----------------
+  1  NAME      Char    200          Student Name
+  2  SEX       Char    200          Gender
+  3  AGE        Num      8          Age in years
+  4  HEIGHT     Num      8          Height in inches
+  5  WEIGHT     Num      8          Weight in pounds
+
+-------------------------------------------------------------------------------
+
+                                                    Frequency of Sex
+
+                                                   The FREQ Procedure
+
+                                    Cumulative    Cumulative
+Gender    Frequency    Percent     Frequency      Percent
+---------------------------------------------------------------
+F                 9     47.37            9        47.37
+M                10     52.63           19       100.00
+                                            Frequency of Sex (no cumulative)
+
+                                                   The FREQ Procedure
+
+Gender    Frequency    Percent
+-------------------------------
+F                 9     47.37
+M                10     52.63
+                                       Descriptive statistics for age and height
+
+                                                  The MEANS Procedure
+
+ Variable  Label                   N           Mean        Std Dev        Minimum        Maximum
+ -----------------------------------------------------------------------------------------------
+ AGE       Age in years           19     13.1578947      1.5004873     11.0000000     16.0000000
+ HEIGHT    Height in inches       19     61.3210526      5.0685938     52.5000000     70.5000000
+ -----------------------------------------------------------------------------------------------
+
+                                                   Sum, range, median
+
+                                                  The MEANS Procedure
+
+ Variable  Label                      Sum         Range        Median
+ --------------------------------------------------------------------
+ AGE       Age in years        250.000000      5.000000     13.000000
+ HEIGHT    Height in inches   1165.100000     18.000000     61.800000
+ --------------------------------------------------------------------
+
+                                                         By sex
+
+                                                  The MEANS Procedure
+
+                                          Analysis Variable : AGE Age in years
+
+        Gender         N Obs        Mean     Std Dev     Minimum     Maximum
+        --------------------------------------------------------------------
+        F                  9   12.777778    1.394433   11.000000   15.000000
+        M                 10   13.500000    1.581139   11.000000   16.000000
+        --------------------------------------------------------------------
+
+                                      Analysis Variable : HEIGHT Height in inches
+
+        Gender         N Obs        Mean     Std Dev     Minimum     Maximum
+        --------------------------------------------------------------------
+        F                  9   58.900000    4.493607   52.500000   64.000000
+        M                 10   63.500000    4.721817   55.800000   70.500000
+        --------------------------------------------------------------------
+
+                                               Summary dataset structure
+
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: clsummary
+Observations:  2
+Variables:     7
+
+Variables (in alphabetical order):
+
+  #  Variable      Type    Len  Format     Label
+---  ------------  ----  -----  ---------  -----
+  1  MeanAge        Num      8  BEST12.15  
+  2  MeanHeight     Num      8  BEST12.15  
+  3  MedianAge      Num      8  BEST12.1   
+  4  MedianHeight   Num      8  BEST12.2   
+  5  sex           Char      1             
+  6  _FREQ_         Num      8             
+  7  _TYPE_         Num      8             
+
+-------------------------------------------------------------------------------
+
+                                                  Height distribution
+
+                                                The UNIVARIATE Procedure
+                                         Variable:  HEIGHT  (Height in inches)
+
+                                                        Moments
+
+N                                 19    Sum Weights                       19
+Mean                       61.321053    Sum Observations         1165.100000
+Std Deviation               5.068594    Variance                   25.690643
+Skewness                   -0.119445    Kurtosis                   -0.690090
+Uncorrected SS          71907.590000    Corrected SS              462.431579
+Coeff Variation             8.265667    Std Error Mean              1.162815
+
+         Basic Statistical Measures          
+
+Location             Variability             
+--------  ---------  -------------  ---------
+Mean      61.321053  Std Deviation   5.068594
+Median    61.800000  Variance       25.690643
+Mode              .  Range          18.000000
+
+Quantiles (Definition 5)
+
+Quantile     Estimate
+----------  ---------
+0% Min      52.500000
+1%          52.500000
+5%          52.500000
+10%         53.000000
+25% Q1      57.000000
+50% Median  61.800000
+75% Q3      65.500000
+90%         68.000000
+95%         70.500000
+99%         70.500000
+100% Max    70.500000
+
+          Extreme Observations          
+
+Lowest               Highest            
+--------  ---------  --------  ---------
+Value     52.500000  Value     65.500000
+Value     53.000000  Value     66.000000
+Value     55.500000  Value     67.200000
+Value     55.800000  Value     68.000000
+Value     57.000000  Value     70.500000
+
+
+
+
+
+
+
+          Tests for Normality          
+
+Test                Statistic   p Value
+------------------  ---------  --------
+Shapiro-Wilk        0.980062632  0.943064646
+Kolmogorov-Smirnov  0.072508264  0.999777554
+Anderson-Darling    0.132503139      0.15
+Cramer-von Mises    0.017138408  0.999304711
+
+
+
+
+         Tests for Location          
+
+Test                Statistic   p Value
+------------------  ---------  --------
+Student's t         52.734995389         0
+Sign                      9.5  0.000003815
+Signed Rank               190  0.00013188
+
+
+                    Stem Leaf                     #  Boxplot
+                 52 |5                      1   
+                 53 |0                      1   
+                 54 |                       0   
+                 55 |57                     2   
+                 56 |                       0   
+                 57 |0                      1  |
+                 58 |5                      1  |
+                 59 |2                      1  |
+                 60 |5                      1  |
+                 61 |27                     2  +
+                 62 |0                      1  +
+                 63 |07                     2  |
+                 64 |0                      1  |
+                 65 |5                      1  |
+                 66 |0                      1   
+                 67 |2                      1   
+                 68 |0                      1   
+                 69 |                       0   
+                 70 |5                      1   
+                     ----+----+----+----+
+               Multiply Stem.Leaf by 1
+
+
+
+                      Schematic Plots
+        Variable=Height in inches
+           |     +-----+
+           |     |     |
+        52.5-----*-----70.5   (box plot)
+           |     |     |
+           |     +-----+
+
+
+
+                         Normal Probability Plot
+      70.5+                                          +*+
+          |                                        ++
+          |                                    *++*
+          |                                  *++
+          |                               +*+
+          |                            ***
+          |                         **++
+          |                      *+*+
+          |                    +*+
+          |                  ++*
+          |               +++*
+          |            ++* *
+          |         +++
+      52.5+       *+  *
+           +----+----+----+----+----+----+----+----+----+----+
+               -2        -1         0        +1        +2
+

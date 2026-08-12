@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-23T13:21:42Z",
+  "_captured_run_id": "r_3670e8ffc3244e4885e211d797a5d09a",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: PROC CONTENTS data=sashelp.class",
+    "NOTE: PROC MEANS",
+    "NOTE: PROC UNIVARIATE",
+    "NOTE: Output dataset clsummary has 2 observations and 7 variables."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

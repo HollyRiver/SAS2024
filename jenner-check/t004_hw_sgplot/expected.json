@@ -1,0 +1,19 @@
+{
+  "_captured_at": "2026-07-23T13:21:42Z",
+  "_captured_run_id": "r_001d711d457149a0a345474d32b2706a",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: PROC SGPLOT data=sashelp.cars",
+    "NOTE: PROC SGPLOT output written to: ./ods_output/sgplot.svg",
+    "NOTE: PROC SGPLOT output written to: ./ods_output/sgplot1.svg"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

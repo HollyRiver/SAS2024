@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_testing_mower_format",
+  "source_file": "testing.sas",
+  "source_blob_sha": "7ac6574a74237e910cd9dfa28d76fb93d74e8fde",
+  "source_commit": "f91b27eb72369261d84eaf98aed553f58df28b1e",
+  "notes": "Mower-survey handling from testing.sas: DATA-step yes/no subsetting and one-pass OUTPUT split, PROC FORMAT value/value-$ (incgrp income bands, $yngrp), PROC FREQ crosstab. The survey (the repo's own data/mower(1).csv, 24 rows) is loaded via an inline DATA step so the bundle is self-contained; the original reads it with PROC IMPORT."
+}
